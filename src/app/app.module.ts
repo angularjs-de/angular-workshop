@@ -9,6 +9,7 @@ import { MouseCursorComponent } from './mouse-cursor/mouse-cursor.component';
 import { TitleBoxComponent } from './title-box/title-box.component';
 import { BookListComponent } from './book-list/book-list.component';
 import { BookDataService } from './shared/book-data.service';
+import { routing } from './app.routing';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { BookDataService } from './shared/book-data.service';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routing
   ],
   providers: [BookDataService],
   bootstrap: [AppComponent]
