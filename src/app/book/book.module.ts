@@ -8,7 +8,8 @@ import { HttpModule } from '@angular/http';
 import { BookRoutingModule } from './book-routing.module';
 import { ConfirmCandeactivateGuardService } from './shared/confirm-candeactivate-guard.service';
 import { BookEditComponent } from './book-edit/book-edit.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BookNewComponent } from './book-new/book-new.component';
 
 
 @NgModule({
@@ -16,13 +17,15 @@ import { FormsModule } from '@angular/forms';
     BookRoutingModule,
     HttpModule,
     FormsModule,
-    CommonModule
+    CommonModule,
+    ReactiveFormsModule
   ],
   declarations: [
     BookComponent,
     BookListComponent,
     BookDetailComponent,
-    BookEditComponent
+    BookEditComponent,
+    BookNewComponent
   ],
   providers: [
     BookDataService,

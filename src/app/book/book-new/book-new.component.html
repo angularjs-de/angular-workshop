@@ -1,0 +1,8 @@
+<h2>Add New Book</h2>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <input type="text" formControlName="title" /><br />
+  <span [hidden]="!form.get('title').hasError('required')">Title is required</span><br />
+  <input type="text" formControlName="author" /><br />
+  <span [hidden]="!form.get('author').hasError('required')">Author is required</span><br />
+  <button [disabled]="!form.valid">Save</button>
+</form>
