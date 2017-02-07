@@ -5,10 +5,14 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ShoutPipe } from './shared/shout.pipe';
+import { TooltipDirective } from './shared/tooltip.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
+    ShoutPipe,
+    TooltipDirective,
   ],
   imports: [
     BrowserModule,
