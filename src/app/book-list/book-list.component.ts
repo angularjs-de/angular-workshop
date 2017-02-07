@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Book } from '../shared/book';
 
 @Component({
   selector: 'book-list',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BookListComponent implements OnInit {
 
-  books = [
+  books: [Book] = [
     {
       "title": "Design Patterns",
       "subtitle": "Elements of Reusable Object-Oriented Software",
