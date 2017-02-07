@@ -4,30 +4,21 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { InfoBoxComponent } from './info-box/info-box.component';
-import { MouseCursorComponent } from './mouse-cursor/mouse-cursor.component';
-import { TitleBoxComponent } from './title-box/title-box.component';
-import { BookListComponent } from './book-list/book-list.component';
-import { BookDataService } from './shared/book-data.service';
 import { routing } from './app.routing';
-import { BookDetailComponent } from './book-detail/book-detail.component';
+import { BookModule } from './book/book.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    InfoBoxComponent,
-    MouseCursorComponent,
-    TitleBoxComponent,
-    BookListComponent,
-    BookDetailComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
+    BookModule,
     routing
   ],
-  providers: [BookDataService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
