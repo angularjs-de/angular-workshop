@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MouseCursorComponent implements OnInit {
 
+  x: number = 0;
+  y: number = 0;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onMousemove($event: MouseEvent) {
+
+    this.x = $event.clientX;
+    this.y = $event.clientY;
   }
 
 }
