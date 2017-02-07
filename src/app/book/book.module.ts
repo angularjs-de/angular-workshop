@@ -7,17 +7,21 @@ import { BookDetailComponent } from './book-detail/book-detail.component';
 import { HttpModule } from '@angular/http';
 import { routing } from './book.routing';
 import { ConfirmCandeactivateGuardService } from './shared/confirm-candeactivate-guard.service';
+import { BookEditComponent } from './book-edit/book-edit.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
     routing,
     HttpModule,
+    FormsModule,
     CommonModule
   ],
   declarations: [
     BookComponent,
     BookListComponent,
-    BookDetailComponent
+    BookDetailComponent,
+    BookEditComponent
   ],
   providers: [
     BookDataService,
