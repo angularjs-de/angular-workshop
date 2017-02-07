@@ -23,7 +23,8 @@ export class BookEditComponent implements OnInit {
 
   onSubmit(value) {
 
-    console.log(value);
+    this.bookService.updateBook(this.book.isbn, value)
+      .subscribe((book: Book) => console.log('Book updated', book));
   }
 
 }

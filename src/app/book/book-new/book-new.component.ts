@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Book } from '../shared/book';
+import { BookDataService } from '../shared/book-data.service';
 
 @Component({
   selector: 'book-new',
@@ -10,7 +12,7 @@ export class BookNewComponent implements OnInit {
 
   form: FormGroup;
 
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder, private bookService: BookDataService) { }
 
   ngOnInit() {
 
@@ -22,7 +24,20 @@ export class BookNewComponent implements OnInit {
 
   onSubmit() {
 
-    console.log(this.form.value);
-  }
+    const book: Book = {
+      isbn: '',
+      title: this.form.value.title,
+      author: this.form.value.author,
+      subtitle: '',
+      abstract: '',
+      numPages: 123,
+      publisher: {
+        name: '',
+        url: ''
+      }
+    };
 
+    this.bookService.createBook(book)
+      .subscribe((book: Book) => console.log('Added new book', book));
+  }
 }
