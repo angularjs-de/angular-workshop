@@ -6,5 +6,5 @@
 
 <mouse-cursor></mouse-cursor>
 
-<title-box [title]="title"></title-box>
+<title-box [title]="title" (titleClicked)="onTitleClicked($event)"></title-box>
 <title-box title="foo"></title-box>
