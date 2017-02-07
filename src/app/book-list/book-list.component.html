@@ -1,3 +1,5 @@
 <ul>
-  <li *ngFor="let book of books">{{book.title}}</li>
+  <li *ngFor="let book of books">
+    <a [routerLink]="[book.isbn]">{{book.title}}</a>
+  </li>
 </ul>
