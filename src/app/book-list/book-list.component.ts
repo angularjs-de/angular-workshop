@@ -12,11 +12,12 @@ export class BookListComponent implements OnInit {
   books: Book[] = [];
 
   constructor(private bookService: BookDataService) {
-
-    this.bookService.getBooks().subscribe(books => this.books = books);
+    
   }
 
   ngOnInit() {
+
+    this.bookService.getBooks().subscribe(books => this.books = books);
   }
 
 }
