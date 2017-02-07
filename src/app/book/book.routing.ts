@@ -4,6 +4,7 @@ import { BookListComponent } from './book-list/book-list.component';
 import { BookDetailComponent } from './book-detail/book-detail.component';
 import { ConfirmCandeactivateGuardService } from './shared/confirm-candeactivate-guard.service';
 import { BookEditComponent } from './book-edit/book-edit.component';
+import { BookNewComponent } from './book-new/book-new.component';
 
 export const routes: Routes = [{
   path: '',
@@ -11,6 +12,9 @@ export const routes: Routes = [{
   children: [{
     path: '',
     component: BookListComponent
+  },{
+    path: 'new',
+    component: BookNewComponent
   }, {
     path: ':isbn',
     component: BookDetailComponent,
