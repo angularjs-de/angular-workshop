@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Book } from '../shared/book';
+import { ActivatedRoute } from '@angular/router';
+import { BookDataService } from '../shared/book-data.service';
+import 'rxjs/add/operator/mergeMap';
 
 @Component({
   selector: 'book-edit',
@@ -7,9 +11,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BookEditComponent implements OnInit {
 
-  constructor() { }
+  book: Book;
+
+  constructor(private route: ActivatedRoute, private bookService: BookDataService) { }
 
   ngOnInit() {
+
+    this.route.params.mergeMap((params: { isbn: string }) => this.bookService.getBookByIsbn(params.isbn))
+      .subscribe(book => this.book = book);
+  }
+
+  onSubmit(value) {
+
+    console.log(value);
   }
 
 }
