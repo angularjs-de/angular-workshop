@@ -5,7 +5,6 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { routing } from './app.routing';
-import { BookModule } from './book/book.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +14,6 @@ import { BookModule } from './book/book.module';
     BrowserModule,
     FormsModule,
     HttpModule,
-    BookModule,
     routing
   ],
   providers: [],
