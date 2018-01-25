@@ -1,5 +1,7 @@
 # Workshops.DE
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/angularjs-de/angular-workshop.svg)](https://greenkeeper.io/)
+
 This project is a reference implementation for our workshops [Angular & TypeScript Workshop](https://workshops.de/seminare-schulungen-kurse/angular-typescript/).
 
 ## Development server
