@@ -28,7 +28,7 @@
   "devDependencies": {
     "@angular/cli": "^1.6.5",
     "@angular/compiler-cli": "^5.2.2",
-    "@types/jasmine": "2.8.6",
+    "@types/jasmine": "2.8.7",
     "@types/node": "~9.6.0",
     "bookmonkey-api": "^2.0.1",
     "codelyzer": "~4.1.0",
