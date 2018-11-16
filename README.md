@@ -1,8 +1,6 @@
-# Workshops.DE
+# Angular.DE
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/angularjs-de/angular-workshop.svg)](https://greenkeeper.io/)
-
-This project is a reference implementation for our workshops [Angular & TypeScript Workshop](https://workshops.de/seminare-schulungen-kurse/angular-typescript/).
+This project is a reference implementation for our workshops [Angular & TypeScript Workshop](https://angular.de/schulungen/angular-intensiv/) as part of our [Workshops.DE Workshops](https://workshops.de/.
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
