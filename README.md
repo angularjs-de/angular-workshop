@@ -1,6 +1,6 @@
 # Angular.DE
 
-This project is a reference implementation for our workshops [Angular & TypeScript Workshop](https://angular.de/schulungen/angular-intensiv/) as part of our [Workshops.DE Workshops](https://workshops.de/).
+This project is a reference implementation for our workshops [Angular & TypeScript Workshop](https://angular.de/schulungen/angular-intensiv/) as part of [Workshops.DE](https://workshops.de/).
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
